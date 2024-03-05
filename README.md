@@ -13,3 +13,7 @@ pip install flash-attn --no-build-isolation
 for example：
 sh scripts/finetune_task_lora_30k_qa_try.sh
 ```
+## data
+```
+the json file as the example，images and more data will be uploaded later.
+```
