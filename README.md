@@ -1,7 +1,7 @@
 # ReasonGPT4V
 ## Install Packages
 ```
-cd LLaVA-main
+cd ReasonGPT4V
 conda create -n llava_reason python=3.10 -y
 conda activate llava_reason
 pip install -e .
