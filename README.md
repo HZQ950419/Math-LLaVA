@@ -8,12 +8,12 @@ pip install -e .
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
-## run lora
+## run lora finetuning
 ```
 for example：
 sh scripts/finetune_task_lora_30k_qa_try.sh
 ```
-## data
+## traing data
 ```
 the json file as the example，images and more data will be uploaded later.
 ```
