@@ -26,6 +26,25 @@ import torch
 
 import transformers
 
+import numpy as np
+import random
+# Set the seed for Python's random number generator
+random.seed(42)
+
+# Set the seed for NumPy's random number generator
+np.random.seed(42)
+
+# Set the seed for PyTorch's random number generator
+torch.manual_seed(42)
+
+# If you're using GPU, you can also set the seed for CUDA devices
+torch.cuda.manual_seed(42)
+torch.cuda.manual_seed_all(42)
+
+# Additional steps to ensure reproducibility when using CUDA
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
+
 from llava.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
 from torch.utils.data import Dataset
 from llava.train.llava_trainer import LLaVATrainer
