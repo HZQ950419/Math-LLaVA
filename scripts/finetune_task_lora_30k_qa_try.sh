@@ -1,13 +1,13 @@
 #!/bin/bash
 echo "start......"
-export PATH="$PATH:/mnt/data2/zhiqiang/wenhao/LLaVA-main"
-deepspeed --master_port=25642 --include localhost:0 llava/train/train_mem.py \
+export PATH="$PATH:../ReasonGPT4V" #$PATH:/mnt/data2/zhiqiang/wenhao/LLaVA-main
+deepspeed --include localhost:0 llava/train/train_mem.py \
     --lora_enable True --lora_r 128 --lora_alpha 256 --mm_projector_lr 2e-5 \
     --deepspeed ./scripts/zero3.json \
     --model_name_or_path liuhaotian/llava-v1.5-13b \
     --version v1 \
-    --data_path /mnt/data2/zhiqiang/wenhao/distributions/train_sample_llava_30k_qa_combine.json \
-    --image_folder /mnt/data2/zhiqiang/wenhao/data_sample_complexity \
+    --data_path /mnt/data2/zhiqiang/wenhao/distributions/train_sample_llava_30k_qa_combine.json \ #
+    --image_folder /mnt/data2/zhiqiang/wenhao/data_sample_complexity \ #
     --vision_tower openai/clip-vit-large-patch14-336 \
     --mm_projector_type mlp2x_gelu \
     --mm_vision_select_layer -2 \
@@ -16,7 +16,7 @@ deepspeed --master_port=25642 --include localhost:0 llava/train/train_mem.py \
     --image_aspect_ratio pad \
     --group_by_modality_length True \
     --bf16 True \
-    --output_dir ./checkpoints/llava-lora-3epoch-data30kcombine-generateqa \
+    --output_dir ./checkpoints/llava-lora-3epoch-data30kcombine-generateqa \ #
     --num_train_epochs 3 \
     --per_device_train_batch_size 8 \
     --per_device_eval_batch_size 4 \
