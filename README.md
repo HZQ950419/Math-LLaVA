@@ -14,7 +14,7 @@ sh finetune_task_lora.sh
 for example：
 sh finetune_task_lora_example.sh
 ```
-## run lora fullfinetuning
+## run fullfinetuning
 ```
 sh finetune_task.sh
 ```
@@ -23,7 +23,7 @@ sh finetune_task.sh
 on the hotpot server
 json_file:
 /home/zhiqiang/home/traindata/train_sample_40kqa_combine_200kqa_gene.json
-/home/zhiqiang/home/traindata/train_sample_40kqa_combine_200kqsa_gene.json
+/home/zhiqiang/ho me/traindata/train_sample_40kqa_combine_200kqsa_gene.json
 /home/zhiqiang/home/traindata/train_sample_40kqa_combine_120kqa_gene_filter.json
 /home/zhiqiang/home/traindata/train_sample_40kqa_combine_120kqsa_gene_filter.json
 
