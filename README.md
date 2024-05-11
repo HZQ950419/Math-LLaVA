@@ -32,7 +32,7 @@ images：
 ```
 ## MathVista Evaluation
 ```
-testmini_data: ./mathvista_data
+testmini_data: ./evaluation_mathvista/mathvista_data
 on the hotpot server: /home/zhiqiang/home/wenhao/mathvista_data
 ```
 Generate the response on the **testmini** subset:
