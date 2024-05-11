@@ -36,7 +36,7 @@ testmini_data: ./mathvista_data
 on the hotpot server: /home/zhiqiang/home/wenhao/mathvista_data
 ```
 Generate the response on the **testmini** subset:
-```sh
+```
 cd evaluation_mathvista
 
 python response.py \
