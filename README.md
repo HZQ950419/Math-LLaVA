@@ -27,6 +27,7 @@ json_file:
 /home/zhiqiang/home/traindata/train_sample_40kqa_combine_120kqa_gene_filter.json
 /home/zhiqiang/home/traindata/train_sample_40kqa_combine_120kqsa_gene_filter.json
 
+
 images：
 /home/zhiqiang/home/wenhao/data_sample_complexity
 ```
