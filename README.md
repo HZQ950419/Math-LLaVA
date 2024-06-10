@@ -63,7 +63,7 @@ python calculate_score.py \
 
 
 
-```
+
 ## MMMU Evaluation
 ```
 data will be loaded by huggingface datasets
