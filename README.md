@@ -61,3 +61,26 @@ python calculate_score.py \
 --score_file responses_score.json \
 ```
 
+
+
+```
+## MMMU Evaluation
+```
+data will be loaded by huggingface datasets
+```
+Generate the response by model:
+```
+cd eval_mmmu
+
+python mmmu_response.py \
+--output_path mmmu_eval_output.json \
+--model_path  \ 
+```
+Eval score:
+
+```sh
+python mmmu_only_eval.py \
+--output_path mmmu_eval_output.json \
+--answer_path ./answer_dict_val.json \
+```
+
