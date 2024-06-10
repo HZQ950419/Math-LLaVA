@@ -98,8 +98,8 @@ def main():
         if sample['image']:
             sample['image'] = vis_process_func(sample['image'], vis_processors).to(device)
         samples.append(sample)
-
-    # run ex
+   
+    ## run ex
     out_samples = run_model(args, samples, model, call_model_engine, tokenizer, processor)
 
     save_json(args.output_path, out_samples)
