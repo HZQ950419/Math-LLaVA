@@ -2,25 +2,19 @@
 
 This repository contains the code, data and model for the paper titled "Math-LLaVA: Bootstrapping Mathematical Reasoning for Multimodal Large Language Models".
 
-[Paper](), [Dataset-MathV360K](), [Models-Math-LLaVA-13B]()
+[Paper](), [Dataset-MathV360K](), [Model]()
 
 
 ## Install Packages
 ```
-cd ReasonGPT4V
-conda create -n llava_reason python=3.10 -y
-conda activate llava_reason
+cd Math-LLaVA
+conda create -n math_llava python=3.10 -y
+conda activate math_llava
 pip install -e .
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
-## run lora finetuning
-```
-sh finetune_task_lora.sh
-for example：
-sh finetune_task_lora_example.sh
-```
-## run fullfinetuning
+## run full-finetuning
 ```
 sh finetune_task.sh
 ```
