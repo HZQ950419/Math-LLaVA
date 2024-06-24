@@ -210,21 +210,18 @@ def get_chat_response(promot, api_key, model="gpt-3.5-turbo", temperature=0, max
 
 def get_chat_response_new(promot, headers, model="gpt-3.5-turbo", temperature=0, max_tokens=256, n=1, patience=10000000,
                       sleep_time=0):
-    #print(api_key)
     messages = [
         {"role": "user", "content": promot},
     ]
-    # print("I am here")
+
     while patience > 0:
         patience -= 1
         try:
 
+            data = {"model": model, "messages": messages, "temperature":0.0}
 
-            data = {"model": model, "messages": messages, "temperature":0.0} #"max_tokens": 256,
-
-            response = requests.post("https://api.xi-ai.cn/v1/chat/completions", headers=headers, json=data)
+            response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=data)
             response = response.json()
-
 
             if n == 1:
                 prediction = response['choices'][0]['message']['content'].strip()
