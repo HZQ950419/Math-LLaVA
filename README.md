@@ -4,6 +4,7 @@ This repository contains the code, data and model for the paper titled "Math-LLa
 
 [Paper](), [Dataset-MathV360K](https://huggingface.co/datasets/steven16/MathV360K/tree/main), [Model]()
 
+![ex1](pipeline.png)
 
 ## Install Packages
 ```
