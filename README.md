@@ -42,7 +42,7 @@ You can download and unzip images of MathVista using the following commands:
 ```sh
 cd ./evaluation_mathvista/mathvista_data
 wget https://huggingface.co/datasets/AI4Math/MathVista/resolve/main/images.zip
-unzip images.zip && rm images.zip
+unzip images.zip
 ```
 Generate the response on the **testmini** subset:
 ```sh
