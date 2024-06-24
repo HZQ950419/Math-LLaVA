@@ -74,4 +74,12 @@ Eval score:
 ```sh
 python mmmu_only_eval.py --output_path mmmu_eval_output.json --answer_path ./answer_dict_val.json
 ```
+## Acknowledgement
+The project is built on top of the amazing [LLaVA](https://github.com/haotian-liu/LLaVA) repository and [MathVista](https://github.com/lupantech/MathVista). Thanks for their contributions!
+
+
+If you find our code and dataset helpful to your research, please consider citing us with this BibTeX:
+```bibtex
+
+```
 
