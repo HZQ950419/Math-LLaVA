@@ -66,9 +66,6 @@ if __name__ == '__main__':
     parser.add_argument('--output_dir', type=str, default='./mathvista_outputs')
     parser.add_argument('--output_file', type=str, default='responses.json')
     # model
-    # parser.add_argument('--model', type=str, default='gpt-3.5-turbo', help='llm engine',
-    #                     choices=['gpt-3.5-turbo', 'claude-2', 'gpt4', 'gpt-4-0613', 'bard'])
-    # parser.add_argument('--key', type=str, default='', help='key for llm api')
     parser.add_argument('--model_path', type=str, default='liuhaotian/llava-v1.5-13b', help='path of lora or full model')
     parser.add_argument('--model_base', type=str, default=None, help='liuhaotian/llava-v1.5-13b for lora, =None for full model')
     # query
