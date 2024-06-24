@@ -14,7 +14,7 @@ from utilities import *
 import openai
 
 
-api_key = "sk-cEYX8qj0DqMDCYrHD4C3E69f5dE044088eC1Df0d543b711d"
+api_key = "" #
 headers = {
                 "Content-Type": "application/json",
                 "Authorization": f"Bearer {api_key}"
@@ -37,7 +37,7 @@ def create_test_prompt(demo_prompt, query, response): #few
     return full_prompt
 
 
-def extract_answer(response, problem, quick_extract=False):
+def extract_answer(response, problem, quick_extract=False, llm_engine):
     question_type = problem['question_type']
     answer_type = problem['answer_type']
     choices = problem['choices']
@@ -62,11 +62,10 @@ def extract_answer(response, problem, quick_extract=False):
             return extraction
         except:
             pass
-
+          
     # quick extraction
     if quick_extract:
         print("Quickly extracting answer...")
-        # The answer is "text". -> "text"
         try:
             result = re.search(r'The answer is "(.*)"\.', response)
             if result:
@@ -78,7 +77,7 @@ def extract_answer(response, problem, quick_extract=False):
     # general extraction
     try:
         full_prompt = create_test_prompt(demo_prompt, query, response)
-        extraction = get_chat_response_new(full_prompt, headers, model='gpt-3.5-turbo')
+        extraction = get_chat_response_new(full_prompt, headers, model=llm_engine)
         return extraction
     except Exception as e:
         print(e)
@@ -116,9 +115,7 @@ def extract_answer_quick(response, problem, quick_extract=False):
     # quick extraction
     if quick_extract:
         print("Quickly extracting answer...")
-        # The answer is "text". -> "text"
         try:
-
             result = response.split('The answer is ')
             if result:
                 #extraction = result.group(1)
@@ -138,7 +135,7 @@ if __name__ == '__main__':
     parser.add_argument('--output_dir', type=str, default='./mathvista_outputs')
     parser.add_argument('--output_file', type=str, default='responses.json')
     parser.add_argument('--response_label', type=str, default='response',
-                        help='response label for the input file')  # response
+                        help='response label for the input file')
     # model
     parser.add_argument('--llm_engine', type=str, default='gpt-3.5-turbo', help='llm engine',
                         choices=['gpt-3.5-turbo', 'gpt-3.5', 'gpt-4', 'gpt-4-0314', 'gpt-4-0613'])
@@ -190,7 +187,7 @@ if __name__ == '__main__':
         assert label in problem
         response = problem[label]
 
-        extraction = extract_answer(response, problem, args.quick_extract)
+        extraction = extract_answer(response, problem, args.quick_extract, args.llm_engine)
         results[pid]['extraction'] = extraction
 
         if i % args.save_every == 0 or i == test_num - 1:
