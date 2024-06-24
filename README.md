@@ -11,26 +11,32 @@ cd Math-LLaVA
 conda create -n math_llava python=3.10 -y
 conda activate math_llava
 pip install -e .
+```
+## Enable Deepspeed and Flash-attention
+```
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
+
+## Data Preparation
+Download our [dataset]().
+
+Place the data in the root directory or other directory.
+Data structure:
+```
+├── images_data/
+│   ├── TabMWP/images/
+│   ├── IconQA/images/
+│   ├── ...
+├── train_samples_all_tuning.json
+```
+"train_samples_all_tuning.json" corresponds to the training set of MathV360K. 
+
 ## run full-finetuning
 ```
 sh finetune_task.sh
 ```
-## training data
-```
-on the hotpot server
-json_file:
-/home/zhiqiang/home/traindata/train_sample_40kqa_combine_200kqa_gene.json
-/home/zhiqiang/ho me/traindata/train_sample_40kqa_combine_200kqsa_gene.json
-/home/zhiqiang/home/traindata/train_sample_40kqa_combine_120kqa_gene_filter.json
-/home/zhiqiang/home/traindata/train_sample_40kqa_combine_120kqsa_gene_filter.json
 
-
-images：
-/home/zhiqiang/home/wenhao/data_sample_complexity
-```
 ## MathVista Evaluation
 ```
 testmini_data: ./evaluation_mathvista/mathvista_data
