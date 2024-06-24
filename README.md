@@ -47,18 +47,15 @@ unzip images.zip
 Generate the response on the **testmini** subset:
 ```sh
 cd evaluation_mathvista
-python response.py --output_dir ./mathvista_outputs --output_file responses.json --model_path your/model/path --model_base None \ 
+python response.py --output_dir ./mathvista_outputs --output_file responses.json --model_path your/model/path --model_base None 
 ```
 Extract the short answer text for score calculation by ChatGPT:
 ```sh
-python extract_answer.py \
---output_file responses.json \
+python extract_answer.py --output_file responses.json
 ```
 Calculate the final score:
 ```sh
-python calculate_score.py \
---output_file responses.json \
---score_file responses_score.json \
+python calculate_score.py --output_file responses.json --score_file responses_score.json
 ```
 
 ## MMMU Evaluation
