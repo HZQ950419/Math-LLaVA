@@ -12,8 +12,6 @@ import sys
 sys.path.append('../')
 from utilities import *
 
-#from models import claude, gpt, bard
-
 from build_query import create_query_data
 from llava.model.builder import load_pretrained_model
 from llava.mm_utils import get_model_name_from_path
@@ -139,40 +137,8 @@ if __name__ == '__main__':
     else:
         results = {}
 
-    '''
-    # load model
-    print(f"\nLoading {args.model}...")
-    if args.model == 'bard':
-        if args.key == '':
-            print("Loading key from environment variable")
-            key = os.environ['_BARD_API_KEY']
-        else:
-            key = args.key
-        model = bard.Bard_Model(key)
-
-    elif "gpt" in args.model:
-        if args.key == '':
-            print("Loading token from environment variable")
-            key = os.getenv("OPENAI_API_KEY")
-        else:
-            key = args.key
-        model = gpt.GPT_Model(args.model, key)
-
-    elif "claude" in args.model:
-        if args.key == '':
-            print("Loading token from environment variable")
-            key = os.environ.get("ANTHROPIC_API_KEY")
-        else:
-            key = args.key
-        model = claude.Claude_Model(args.model, key)
-
-    print(f"Model loaded.")
-    '''
-
-    ##load LLaVA model
-    #model_path = "liuhaotian/llava-v1.5-13b"
-    model_path = args.model_path#"/home/zhiqiang/home/wenhao/LLaVA-main/checkpoints/llava-lora-2epoch-40k_200k-gene-filter"
-    model_base = args.model_base #"liuhaotian/llava-v1.5-13b",#model_base=None,
+    model_path = args.model_path
+    model_base = args.model_base
 
     tokenizer, model, image_processor, context_len = load_pretrained_model(
         model_path=model_path,
