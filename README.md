@@ -91,7 +91,7 @@ Accuracy scores on the testmini subset:
 ## Results on MMMU
 Accuracy scores on the validation set:
 
-| Model                 | ALL    |
+| Model                 | ALL    |               
 |-----------------------|--------|
 | miniGPT4-7B           |**26.8**|
 | mPLUG-Owl-7B          |**32.7**|
