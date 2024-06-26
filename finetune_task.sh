@@ -4,7 +4,7 @@ deepspeed llava/train/train_mem.py \
     --model_name_or_path liuhaotian/llava-v1.5-13b \
     --version v1 \
     --data_path ./train_samples_all_tuning.json \
-    --image_folder ./images_data \
+    --image_folder ./data_images \
     --vision_tower openai/clip-vit-large-patch14-336 \
     --mm_projector_type mlp2x_gelu \
     --mm_vision_select_layer -2 \
