@@ -33,7 +33,7 @@ Data structure:
 ├── train_samples_all_tuning.json
 ```
 
-## run full-finetuning
+## Run full-finetuning
 ```
 sh finetune_task.sh
 ```
