@@ -64,9 +64,9 @@ python calculate_score.py --output_file responses.json --score_file responses_sc
 ```
 ## Results on MathVista testmini
 
-| Model                 | ALL  | FQA   |   GPS  |  MWP | TQA | VQA |
-|-----------------------|--------|--------|----------|--------|---------|
-| GPT-3.5               |****|****| **** |****|**** |
+| Model                 | ALL    | FQA    |   GPS    |  MWP   | TQA     | VQA |
+|-----------------------|--------|--------|----------|--------|---------|---------|
+| GPT-3.5               |****|****| **** |****|**** |**** |
 
 
 ## MMMU Evaluation
