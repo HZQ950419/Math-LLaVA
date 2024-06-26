@@ -60,7 +60,7 @@ python calculate_score.py --output_file responses.json --score_file responses_sc
 ```
 
 ## MMMU Evaluation
-Generate the response by model:
+Generate the response:
 ```
 cd eval_mmmu
 python mmmu_response.py --output_path mmmu_eval_output.json --model_path 
