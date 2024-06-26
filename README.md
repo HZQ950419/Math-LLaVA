@@ -2,7 +2,7 @@
 
 This repository contains the code, data and model for the paper titled "Math-LLaVA: Bootstrapping Mathematical Reasoning for Multimodal Large Language Models".
 
-[Paper](http://arxiv.org/abs/2406.17294), [Dataset-MathV360K](https://huggingface.co/datasets/steven16/MathV360K/tree/main), [Model](https://huggingface.co/Zhiqiang007/Math-LLaVA/tree/main)
+[Paper](http://arxiv.org/abs/2406.17294), [Dataset-MathV360K](), [Model](https://huggingface.co/Zhiqiang007/Math-LLaVA/tree/main)
 
 ![ex1](pipeline.png)
 
@@ -20,7 +20,7 @@ pip install flash-attn --no-build-isolation
 ```
 
 ## Data Preparation
-Download our [dataset](https://huggingface.co/datasets/steven16/MathV360K/tree/main).
+Download our [dataset]().
 
 Place the data in the root directory or other directory.
 Data structure:
