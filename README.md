@@ -89,6 +89,29 @@ Calculate the score:
 ```
 python mmmu_only_eval.py --output_path mmmu_eval_output.json --answer_path ./answer_dict_val.json
 ```
+## Results on MMMU
+Accuracy scores on the validation set:
+
+| Model                 | ALL    |
+|-----------------------|--------|
+| miniGPT4-7B           |**26.8**|
+| mPLUG-Owl-7B          |**32.7**|
+| InstructBLIP-7B       |**32.9**|
+| SPHINX-13B            |**32.9**|
+| LLaVA-1.5-13B         |**36.4**|
+| Math-LLaVA-13B        |**38.3**|
+
+## Results on MATH-V
+We also test on [MATH-V](https://github.com/mathvision-cuhk/MATH-V), a more challenge dataset:
+
+| Model                 | ALL    |
+|-----------------------|--------|
+| Qwen-VL-Plus          |**10.72**|
+| LLaVA-1.5-13B         |**11.12**|
+| ShareGPT4V-13B        |**11.88**|
+| InternLM-XComposer2-VL|**14.54**|
+| Math-LLaVA-13B        |**15.69**|
+
 ## Acknowledgement
 The project is built on top of the amazing [LLaVA](https://github.com/haotian-liu/LLaVA) repository, [MathVista](https://github.com/lupantech/MathVista) and [MMMU](https://github.com/MMMU-Benchmark/MMMU). Thanks for their contributions!
 
