@@ -45,12 +45,12 @@ cd ./evaluation_mathvista/mathvista_data
 wget https://huggingface.co/datasets/AI4Math/MathVista/resolve/main/images.zip
 unzip images.zip
 ```
-Generate the response on the **testmini** subset:
+Generate the response on the testmini subset:
 ```
 cd evaluation_mathvista
 python response.py --output_dir ./mathvista_outputs --output_file responses.json --model_path your/model/path --model_base None 
 ```
-Extract the short answer text for score calculation by ChatGPT:
+Extract the short answer text for score calculation by ChatGPT. Please refer [OpenAI API key](https://platform.openai.com/account/api-keys).
 ```
 python extract_answer.py --output_file responses.json
 ```
@@ -60,15 +60,12 @@ python calculate_score.py --output_file responses.json --score_file responses_sc
 ```
 
 ## MMMU Evaluation
-```
-MMMU data will be loaded by huggingface datasets
-```
 Generate the response by model:
 ```
 cd eval_mmmu
 python mmmu_response.py --output_path mmmu_eval_output.json --model_path 
 ```
-Eval score:
+Calculate the score:
 ```
 python mmmu_only_eval.py --output_path mmmu_eval_output.json --answer_path ./answer_dict_val.json
 ```
