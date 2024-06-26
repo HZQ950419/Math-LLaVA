@@ -6,6 +6,13 @@ This repository contains the code, data and model for the paper titled "Math-LLa
 
 ![ex1](pipeline.png)
 
+## Latest News 🔥
+
+
+
+* [2023-06-26] we released [Math-LLaVA checkpoints](https://huggingface.co/Zhiqiang007/Math-LLaVA/tree/main). The Math-LLaVA-13B model achieves **46.6%** on MathVista testmini, achieves **38.3%** on MMMU, and achieves **15.69%** on MATH-V.
+* [2024-06-25] Release code and [MathV360K dataset]()
+
 ## Install Packages
 ```
 cd Math-LLaVA
