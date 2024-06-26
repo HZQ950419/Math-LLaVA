@@ -45,7 +45,7 @@ cd ./evaluation_mathvista/mathvista_data
 wget https://huggingface.co/datasets/AI4Math/MathVista/resolve/main/images.zip
 unzip images.zip
 ```
-Generate the response on the testmini subset:
+Generate the response on testmini subset:
 ```
 cd evaluation_mathvista
 python response.py --output_dir ./mathvista_outputs --output_file responses.json --model_path your/model/path --model_base None 
