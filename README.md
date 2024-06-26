@@ -25,7 +25,7 @@ pip install flash-attn --no-build-isolation
 
 ## Data Preparation
 "train_samples_all_tuning.json" corresponds to the annotations of qa pairs for finetuning. 
-Download our [image dataset]().
+Download [image dataset]().
 
 Place the data in the root directory or other directory.
 Data structure:
