@@ -62,6 +62,17 @@ Calculate the final score:
 ```
 python calculate_score.py --output_file responses.json --score_file responses_score.json
 ```
+
+## MMMU Evaluation
+Generate the response:
+```
+cd eval_mmmu
+python mmmu_response.py --output_path mmmu_eval_output.json --model_path 
+```
+Calculate the score:
+```
+python mmmu_only_eval.py --output_path mmmu_eval_output.json --answer_path ./answer_dict_val.json
+```
 ## Results on MathVista
 Accuracy scores on the testmini subset:
 
@@ -78,17 +89,6 @@ Accuracy scores on the testmini subset:
 | Math-LLaVA-13B        |**46.6**|
 
 
-
-## MMMU Evaluation
-Generate the response:
-```
-cd eval_mmmu
-python mmmu_response.py --output_path mmmu_eval_output.json --model_path 
-```
-Calculate the score:
-```
-python mmmu_only_eval.py --output_path mmmu_eval_output.json --answer_path ./answer_dict_val.json
-```
 ## Results on MMMU
 Accuracy scores on the validation set:
 
