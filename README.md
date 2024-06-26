@@ -31,7 +31,7 @@ Data structure:
 │   ├── ...
 ├── train_samples_all_tuning.json
 ```
-"train_samples_all_tuning.json" corresponds to the qa pairs for tuning. 
+"train_samples_all_tuning.json" corresponds to the qa pairs for finetuning. 
 
 ## run full-finetuning
 ```
