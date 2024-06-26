@@ -62,11 +62,21 @@ Calculate the final score:
 ```
 python calculate_score.py --output_file responses.json --score_file responses_score.json
 ```
-## Results on MathVista testmini
+## Results on MathVista
+Accuracy scores on the testmini subset:
 
-| Model                 | ALL    | FQA    |   GPS    |  MWP   | TQA     | VQA |
-|-----------------------|--------|--------|----------|--------|---------|---------|
-| GPT-3.5               |****|****| **** |****|**** |**** |
+| Model                 | ALL    |
+|-----------------------|--------|
+| mPLUG-Owl-7B          |**22.2**|
+| miniGPT4-7B           |**23.1**|
+| InstructBLIP-7B       |**25.3**|
+| LLaVA-13B             |**26.1**|
+| SPHINX-V1-13B         |**27.5**|
+| LLaVA-1.5-13B         |**27.6**|
+| OmniLMM-12B           |**34.9**|
+| SPHINX-V2-13B         |**36.7**|
+| Math-LLaVA-13B        |**46.6**|
+
 
 
 ## MMMU Evaluation
