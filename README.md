@@ -26,7 +26,7 @@ Download our [image dataset]().
 Place the data in the root directory or other directory.
 Data structure:
 ```
-├── images_data/
+├── data_images/
 │   ├── TabMWP/images/
 │   ├── IconQA/images/
 │   ├── ...
