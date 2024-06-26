@@ -62,6 +62,12 @@ Calculate the final score:
 ```
 python calculate_score.py --output_file responses.json --score_file responses_score.json
 ```
+## Results on MathVista testmini
+
+| Model                 | ALL  | FQA   |   GPS  |  MWP | TQA | VQA |
+|-----------------------|--------|--------|----------|--------|---------|
+| GPT-3.5               |****|****| **** |****|**** |
+
 
 ## MMMU Evaluation
 Generate the response:
