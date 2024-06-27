@@ -2,13 +2,13 @@
 
 This repository contains the code, data and model for the paper titled "Math-LLaVA: Bootstrapping Mathematical Reasoning for Multimodal Large Language Models".
 
-[Paper](http://arxiv.org/abs/2406.17294), [Image Dataset](https://huggingface.co/datasets/Zhiqiang007/MathV360K/tree/main), [Model](https://huggingface.co/Zhiqiang007/Math-LLaVA/tree/main)
+[Paper](http://arxiv.org/abs/2406.17294v2), [Image Dataset](https://huggingface.co/datasets/Zhiqiang007/MathV360K/tree/main), [Model](https://huggingface.co/Zhiqiang007/Math-LLaVA/tree/main)
 
 ![ex1](pipeline.png)
 
 ## Latest News 🔥
 * [2023-06-26] We released [Math-LLaVA checkpoints](https://huggingface.co/Zhiqiang007/Math-LLaVA/tree/main). The Math-LLaVA-13B model achieves **46.6%** on MathVista testmini, achieves **38.3%** on MMMU, and achieves **15.69%** on MATH-V.
-* [2024-06-25] Release [paper](http://arxiv.org/abs/2406.17294), [code](https://github.com/HZQ950419/Math-LLaVA) and [MathV360K dataset](https://huggingface.co/datasets/Zhiqiang007/MathV360K/tree/main).
+* [2024-06-25] Release [paper](http://arxiv.org/abs/2406.17294v2), [code](https://github.com/HZQ950419/Math-LLaVA) and [MathV360K dataset](https://huggingface.co/datasets/Zhiqiang007/MathV360K/tree/main).
 
 ## Install Packages
 ```
