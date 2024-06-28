@@ -101,7 +101,7 @@ Accuracy scores on the validation set:
 | Math-LLaVA-13B        |**38.3**|
 
 ## Results on MATH-V
-We also test on [MATH-V](https://github.com/mathvision-cuhk/MATH-V), a more challenge dataset:
+We also test on [MATH-V](https://github.com/mathvision-cuhk/MATH-V), a more challenging dataset:
 
 | Model                 | ALL    |
 |-----------------------|--------|
